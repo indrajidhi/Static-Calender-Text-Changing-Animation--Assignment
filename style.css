@@ -1,0 +1,73 @@
+ /* CSS reset */
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+/* calender css code */
+.calendar-wrapper {
+    max-width: 280px;
+    font: 100% system-ui;
+  }
+  .calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+  }
+  
+  .first-day {
+    grid-column-start: 3;
+  }
+  
+  
+  .day-name {
+    background: #eee;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  li {
+    padding: 2px;
+  }
+  h1{
+    margin-bottom: 10px;
+  }
+  body{
+    
+    display: grid;
+  place-items: center;
+  }
+  
+  /* Text animation CSS code */
+.box{
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  color: rgb(170, 153, 153);
+  width: 50%;
+  height: auto;
+  border: 1px solid black;
+}
+.box div:after{
+content: 'LIFESTYLE';
+animation: text 10s infinite;
+background-color: green;
+}
+@keyframes text{
+  30%{
+    content: 'WORK';
+    background-color:rgb(12, 15, 74);
+  }
+  60%{
+    content: 'EVERYTHING';
+    background-color: red;
+  }
+}
